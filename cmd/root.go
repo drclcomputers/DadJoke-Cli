@@ -14,12 +14,12 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var version = "1.0.0"
+var version = "1.0.3"
 
 var rootCmd = &cobra.Command{
-	Use:   "joke",
-	Short: "A simple CLI to fetch and display random jokes",
-	Long:  `Joke is a command-line tool that fetches and displays random jokes.`,
+	Use:   "dadjoke",
+	Short: "A simple CLI to fetch and display random dad jokes",
+	Long:  `DadJoke is a command-line tool that fetches and displays random dad jokes.`,
 	Run: func(cmd *cobra.Command, args []string) {
 
 		showVersion, err := cmd.Flags().GetBool("version")
