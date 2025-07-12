@@ -52,6 +52,6 @@ func Execute() {
 
 func init() {
 	rootCmd.Flags().BoolP("programming", "p", false, "Show programming joke instead of general one.")
-	rootCmd.Flags().StringP("save", "s", "text", "Save the dad joke as a txt or json file.")
+	rootCmd.Flags().StringP("save", "s", "", "Save the dad joke as a txt or json file.")
 	rootCmd.Flags().BoolP("version", "v", false, "Show app version.")
 }
