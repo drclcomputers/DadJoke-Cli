@@ -25,7 +25,7 @@ var rootCmd = &cobra.Command{
 		showVersion, err := cmd.Flags().GetBool("version")
 		logger.CheckErr(err)
 		if showVersion {
-			fmt.Printf("Joke CLI version: %s\n", version)
+			fmt.Printf("DadJoke CLI version: %s\n", version)
 			return
 		}
 
